@@ -1,0 +1,5 @@
+<permissions>
+    <permission name="com.hkmc.permission.AUTOMOTIVE_STATE" />
+    <permission name="com.hkmc.permission.AUTOMOTIVE_DIAGNOSTIC" />
+    <permission name="com.hkmc.permission.AUTOMOTIVE_HVAC" />
+</permissions>

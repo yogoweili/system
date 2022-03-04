@@ -1,0 +1,6 @@
+# Script to start "micom_power" on the device, which has a very rudimentary
+# shell.
+#
+base=/system
+export CLASSPATH=$base/framework/com.ahnlab.jar:$base/framework/SecCtl.jar
+exec su system app_process $base/bin com.hkmc.commands.security.Security $*

@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+# Save error log
+echo "$0, log file: $1"
+exec /system/bin/logcat -v time -d -f /data/system/dropbox/$1

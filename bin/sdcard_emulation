@@ -1,0 +1,32 @@
+#!/system/bin/sh
+
+UID=0
+
+bind_mount() {
+  mkdir -p $1
+  mkdir -p $2
+  /system/bin/mount -o bind $1 $2
+}
+
+# wait for initialzing sdcard daemon
+sleep 1
+
+# see initZygote()
+# in dalvik/vm/Init.cpp
+mount -t tmpfs -o nosuid,nodev,uid=0,gid=1028,mode=0050 tmpfs $EMULATED_STORAGE_TARGET
+
+# see mountEmulatedStorage()
+# in dalvik/vm/native/dalvik_system_Zygote.cpp
+
+# Mount entire external storage tree for all users
+bind_mount $EMULATED_STORAGE_SOURCE $EMULATED_STORAGE_TARGET
+
+# Only mount user-specific external storage
+# bind_mount $EMULATED_STORAGE_SOURCE/$UID $EMULATED_STORAGE_TARGET/$UID
+
+# Now that user is mounted, prepare and mount OBB storage
+# into place for current user
+bind_mount $EMULATED_STORAGE_SOURCE/obb $EMULATED_STORAGE_TARGET/$UID/Android/obb
+
+# Finally, mount user-specific path into place for legacy users
+bind_mount $EMULATED_STORAGE_TARGET/$UID $EXTERNAL_STORAGE

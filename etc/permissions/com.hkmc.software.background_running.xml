@@ -1,0 +1,4 @@
+<permissions>
+    <permission name="com.hkmc.permission.BACKGROUND_RUNNING" >
+    </permission>
+</permissions>

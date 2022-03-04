@@ -1,0 +1,145 @@
+# File Name : B8910-NVRAM-160714-E_0000.txt
+# Sample NVRAM for BCM89335 WLBGA with eTR,iPA, and eLNA. 
+# 2,4G/FEM: RFMD_RF8250SR   5Ghz/FEM: RFMD8550SR
+NVRAMRev=$Rev: 396102 $
+sromrev=11
+boardrev=0x1101
+boardtype=0x06c9
+boardflags=0x10081401
+boardflags2=0x00000000
+boardflags3=0x08101188
+#boardnum=57410 
+macaddr=00:90:4c:c5:12:38
+ccode=0
+regrev=0
+antswitch=0
+pdgain2g=7
+pdgain5g=7
+tworangetssi2g=0
+tworangetssi5g=0
+#femctrl=4
+vendid=0x14e4
+devid=0x43ae
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=502
+xtalfreq=37400
+extpagain2g=2
+pdetrange2g=2
+extpagain5g=2
+pdetrange5g=2
+rxgains2gelnagaina0=2
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=5
+rxgains5gtrisoa0=11
+rxgains5gtrelnabypa0=1
+#pdgain5g=10
+#pdgain2g=10
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+tssipos5g=0
+tssipos2g=0
+
+#New PA params
+pa2ga0=-103,6937,-759
+pa2gccka0=-146,6899,-803
+pa5ga0=-146,5808,-698,-156,5611,-687,-130,5525,-644,-150,5779,-691
+pa5gbw40a0=-130,5975,-673,-118,6005,-685,-115,5944,-667,-140,5765,-653
+pa5gbw80a0=-179,5765,-703,-162,5735,-705,-145,5730,-647,-180,5525,-653
+
+#Old PA params
+#pa2ga0=-103,6937,-759
+#pa2gccka0=-146,6899,-803
+#pa5ga0=-166,5808,-698,-166,5611,-677,-150,5525,-644,-163,5779,-691
+#pa5gbw40a0=-173,6025,-736,-134,6215,-725,-137,5944,-682,-197,5646,-709
+#pa5gbw80a0=-152,5791,-680,-167,5788,-711,-140,5697,-653,-187,5655,-705
+
+#Original PA params
+#pa2ga0=-161,6269,-723
+#pa2gccka0=-116,7568,-852
+#pa5ga0=0xFF61,0x163C,0xFD55,0xFF5D,0x1671,0xFD4F,0xFF5F,0x16CA,0xFD45,0xFF60,0x1676,0xFD4D
+#pa5gbw40a0=0xFF61,0x163C,0xFD55,0xFF5D,0x1671,0xFD4F,0xFF5F,0x16CA,0xFD45,0xFF60,0x1676,0xFD4D
+#pa5gbw80a0=0xFF61,0x163C,0xFD55,0xFF5D,0x1671,0xFD4F,0xFF5F,0x16CA,0xFD45,0xFF60,0x1676,0xFD4D
+
+pdoffset40ma0=0
+pdoffset80ma0=0
+pdoffsetcckma0=0
+maxp2ga0=76
+
+#NEW MAX POWER
+maxp5ga0=70,70,70,70
+
+#Original MAX POWER
+#maxp5ga0=76,76,76,76
+cckbw202gpo=0x1110
+#cckbw20ul2gpo=0x4444
+cckbw20ul2gpo=0xAAAA
+#mcsbw202gpo=0x99866666
+mcsbw202gpo=0x99888888
+
+#NEW POWER OFFSET
+mcsbw402gpo=0x99999999
+
+#Original POWER OFFSET
+#mcsbw402gpo=0x99999999
+
+dot11agofdmhrbw202gpo=0x8888
+ofdmlrbw202gpo=0xff88
+tssifloor2g=500
+
+#NEW POWER OFFSET
+#20MHz:12dBm 40MHz:8.5dBm(MCS0~MCS9) 80MHz:8dBm(MCS0~MCS9)
+mcsbw205glpo=0x66655555
+mcsbw405glpo=0xcccccccc
+mcsbw805glpo=0xcdcccccc
+mcsbw1605glpo=0xffffffff
+mcsbw205gmpo=0x77555555
+mcsbw405gmpo=0xcccccccc
+mcsbw805gmpo=0xeeeeeeed
+mcsbw1605gmpo=0xffffffff
+mcsbw205ghpo=0x77666666
+mcsbw405ghpo=0xdddddddd
+mcsbw805ghpo=0xbbbbbbbb
+mcsbw1605ghpo=0xffffffff
+
+mcslr5glpo=0x0000
+mcslr5gmpo=0x0000
+mcslr5ghpo=0xf000
+sb20in40hrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb40and80lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb40and80lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb40and80lr5ghpo=0x0
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+phycal_tempdelta=25
+cckdigfilttype=2
+swctrlmap_5g=0x00080008,0x00140010,0x00100010,0x000000,0x0ff
+swctrlmap_2g=0x00000000,0x00030001,0x00010001,0x800301,0x0ff
+swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+swctrlmapext_2g=0x00000001,0x00000000,0x00000000,0x000000,0x001
+#
+#GPIO 0 for SDIO HW OOB interruption
+muxenab=0x10
+#sd_gpout=0
+#sd_gpval=1
+#sd_oobonly=1
+#old rssi params
+#rssicorrnorm_c0=-3,-2
+#rssicorrnorm5g_c0=-1,0,-3,-1,0,-3,-3,-2,-4,-3,-2,-4
+#New rssi params
+rssicorrnorm_c0=-3,-2
+rssicorrnorm5g_c0=-2,-3,0,-2,-3,0,-4,-4,0,-4,-4,0

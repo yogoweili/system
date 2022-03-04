@@ -1,0 +1,39 @@
+#!/system/bin/sh
+
+echo "Quickboot Image Export"
+
+file="command"
+target_path="/cache/recovery/"
+
+#Make Recovery Directory
+su -c mkdir $target_path
+if [ $? -ne 0 ]; then
+	echo Remove Recovery Directory
+	su -c rm -rf $target_path
+	su -c mkdir $target_path
+	if [ $? -ne 0 ]; then
+		echo Fail Make Recovery Directory
+		exit 1
+	else
+		echo Success Make Recovery Directory
+	fi
+else
+	echo Success Make Recovery Directory
+fi
+
+#Make command file
+su -c touch $target_path$file
+if [ $? -ne 0 ]; then
+	echo Fail Make command $?
+	exit 1
+else
+	echo Success Make command file
+fi
+
+#Write command file
+echo --extract_qbimg=/usb | su -c busybox tee -a $target_path$file
+echo --locale=en_US | su -c busybox tee -a $target_path$file
+
+echo "Reboot Recovery Mode"
+sleep 5
+su -c reboot recovery

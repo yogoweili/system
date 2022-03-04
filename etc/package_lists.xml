@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<packages>
+<last-platform-version internal="17" external="17" />
+<!-- For Android default system apks.
+     CAUTION : Do not change this below lists!!
+-->
+<!-- Shared UID -->
+<package name="android.uid.shared" userId="10001" />
+<package name="android.user.audiocd" userId="10015" />
+<package name="android.media" userId="10070" />
+<package name="android.uid.calendar" userId="10071" />
+<!-- Normal UID -->
+<package name="com.daudio.av.app.ipodmusic" userId="10020" />
+<package name="com.android.soundrecorder" userId="10061" />
+<package name="com.hkmc.av.app.mediagate" userId="10022" />
+<package name="com.android.voicedialer" userId="10065" />
+<package name="com.android.defcontainer" userId="10008" />
+<package name="com.android.launcher" userId="10044" />
+<package name="com.daudio.av.app.pandoraradio" userId="10026" />
+<package name="com.hkmc.av.app.radiona" userId="10027" />
+<package name="com.android.quicksearchbox" userId="10059" /> 
+<package name="com.android.contacts" userId="10001" />
+<package name="com.hkmc.system.app.mymenu" userId="10024" /> 
+<package name="com.android.inputmethod.latin" userId="10043" /> 
+<package name="com.android.inputmethod.korean" userId="10042" />
+<package name="com.android.calculator2" userId="10005" />
+<package name="com.daudio.app.dipo" userId="10017" />
+<package name="com.SoundHound" userId="10031" />
+<package name="com.daudio.av.app.mymusic" userId="10025" />
+<package name="com.android.htmlviewer" userId="10038" />
+<package name="com.hkmc.frame.app.image.media" userId="10029" />
+<package name="com.hkmc.system.app.voiceinfomenu" userId="10035" />
+<package name="com.hkmc.av.app.image.media" userId="10033" />
+<package name="com.android.wallpaper.holospiral" userId="10039" /> 
+<package name="com.android.calendar" userId="10006" />
+<package name="com.android.browser" userId="10004" />
+<package name="com.android.providers.userdictionary" userId="10001" />
+<package name="com.android.sharedstoragebackup" userId="10060" />
+<package name="com.android.vpndialogs" userId="10066" />
+<package name="com.android.mms" userId="10048" />
+<package name="com.android.provision" userId="10058" />
+<package name="com.android.certinstaller" userId="10007" />
+<package name="com.hkmc.system.app.engineering" userId="10019" />
+<package name="com.tcc.iap2server" userId="10041" />
+<package name="com.daudio.av.app.usbmusic" userId="10034" />
+<package name="com.android.dreams.phototable" userId="10056" />
+<package name="com.mobis.system" userId="10051" />
+<package name="com.daudio.av.app.mp3cd" userId="10023" />
+<package name="com.android.providers.contacts" userId="10001" />
+<package name="com.mobis.voicehandler" userId="10036" />
+<package name="com.android.videoeditor" userId="10063" />
+<package name="com.android.providers.applications" userId="10001" />
+<package name="com.hkmc.system.app.swupdate" userId="10032" />
+<package name="com.hkmc.interactiveguide" userId="10021" />
+<package name="com.hkmc.system.app.downloadmenu" userId="10018" />
+<package name="com.mobis.platform.narooutil" userId="10050" />
+<package name="com.android.exchange" userId="10012" />
+<package name="com.android.musicvis" userId="10064" />
+<package name="com.android.wallpaper.livepicker" userId="10046" />
+<package name="com.hkmc.av.app.AvAux.media" userId="10016" />
+<package name="com.android.speechrecorder" userId="10062" />
+<package name="com.daudio.av.app.btaudio.ui" userId="10002" />
+<package name="com.android.development" userId="10010" />
+<package name="com.android.packageinstaller" userId="10054" />
+<package name="com.daudio.av.app.audiocd" userId="10015" />
+<package name="com.hkmc" userId="10000" />
+<package name="com.android.wallpaper" userId="10045" />
+<package name="com.svox.pico" userId="10057" />
+<package name="com.android.noisefield" userId="10053" />
+<package name="com.android.email" userId="10011" />
+<package name="com.telechips.android.Iap1ConnectApp" userId="10040" />
+<package name="com.hkmc.av.app.sxmdata" userId="10037" />
+<package name="com.hkmc.system.app.allmenu" userId="10014" />
+<package name="com.android.deskclock" userId="10009" />
+<package name="com.android.backupconfirm" userId="10003" />
+<package name="com.android.location.fused" userId="10013" /> 
+<package name="com.android.magicsmoke" userId="10047" />
+<package name="com.hkmc.mediazen.siri" userId="10030" />
+<package name="com.hkmc.system.app.rearcamera" userId="10028" />
+<package name="com.mobis.platform.narootest" userId="10049" />
+<package name="com.android.musicfx" userId="10052" />
+<package name="com.android.phasebeam" userId="10055" />
+<package name="com.android.smspush" userId="10067" />
+<package name="com.android.music" userId="10068" />
+<package name="com.hkmc.monitor.app.cmmb" userId="10069" />
+<package name="com.android.providers.downloads.ui" userId="10070" />
+<package name="com.android.providers.media" userId="10070" />
+<package name="com.android.providers.drm" userId="10070" />
+<package name="com.android.providers.downloads" userId="10070" />
+<package name="com.android.providers.calendar" userId="10071" />
+<package name="com.hkmc.av.app.radiocn" userId="10072" />
+<package name="com.mnsoft.navi" userId="10073" />
+<package name="com.daudio.av.app.usbvideo" userId="10074" />
+<package name="com.daudio.av.app.cmmb" userId="10075" />
+<package name="com.hkmc.vitlite.app" userId="10076" />
+<package name="com.hkmc.telematics.engineeringmode" userId="10077" />
+<package name="com.google.android.projection.sink" userId="10078" />
+<!-- 
+    CAUTION : Do not change above lists.
+    		New package should be added to the last. (from 10078)
+    		and Do not remove old packages that are added in the past.
+-->
+<package name="com.daudio.av.app.dmb" userId="10079" />
+<package name="com.hkmc.telematics.app.hev" userId="10080" />
+<package name="com.hkmc.telematics.app.phev" userId="10081" />
+<!-- will add sometimes later
+<package name="com.hkmc.telematics.app.ev" userId="10082" />
+-->
+<package name="com.hkmc.telematics.service.apps.climate" userId="10083" />
+<package name="com.hkmc.mediazen.vls" userId="10202" />
+</packages>

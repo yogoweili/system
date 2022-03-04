@@ -1,0 +1,4 @@
+<!-- D-Audio specific common hardware feature -->
+<permissions>
+    <feature name="android.hardware.screen.landscape" />
+</permissions>

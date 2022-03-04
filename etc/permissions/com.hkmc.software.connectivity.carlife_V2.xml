@@ -1,0 +1,5 @@
+<permissions>
+    <feature name="com.hkmc.software.connectivity.carlife" />
+    <feature name="com.hkmc.software.connectivity.carlife_AOAP" />
+</permissions>
+
